@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Full Name : Sarmiento, Maria Anne Joy T.
+    Section   : CS201
+    Activity  : Creating Table and Forms
+    Date      : August 25, 2025 
+    -->
+    <title>A Creative Portfolio by Joy Sarmiento</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+    
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <a href="index.html">
+                <img src="images/creative-portfolio-logo.png" alt="Creative Portfolio Logo"/>
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Use the main area to add the main content on the webpage -->
+        <main>
+            <div id="hero" class="tablet-desktop">
+                <img src="images/projects-hero-image.png" alt="Collaborative UI/UX design in Figma" />
+            </div>
+
+            <div class="mobile">
+                <h3>Project Showcase</h3>
+                <p>Portfolio Website (Web Development, 2025)</p>
+                <p>UI/UX Prototype (Design, 2024)</p>
+                <p>Python Mini-Apps (Programming, 2023)</p>
+                <p>Database System (Academic Project, 2023)</p>
+                <p>CompTIA ITF+ Certification (Certification, 2025)</p>
+                <p>Responsive Web Design Certification (Online Learning, 2025)</p>
+            </div>
+
+            <div class="tablet-desktop">
+                <table><!-- Start Table -->
+                    <caption>Featured Projects</caption>
+                    <tr><!-- Row 1 -->
+                        <th>Project Title</th>
+                        <th>Category</th>
+                        <th>Tools Used</th>
+                        <th>Year Completed</th>
+                        <th>Showcase Section</th>
+                    </tr>
+                    <tr><!-- Row 2 -->
+                        <td>Portfolio Website</td>
+                        <td>Web Development</td>
+                        <td>HTML, CSS</td>
+                        <td>2025</td>
+                        <td>Projects Page</td>
+                    </tr>
+                    <tr><!-- Row 3 -->
+                        <td>UI/UX Prototype</td>
+                        <td>Design</td>
+                        <td>Figma</td>
+                        <td>2024</td>
+                        <td>Projects Page</td>
+                    </tr>
+                    <tr><!-- Row 4 -->
+                        <td>Python Mini-Apps</td>
+                        <td>Programming</td>
+                        <td>Python, VS Code</td>
+                        <td>2023</td>
+                        <td>Projects Page</td>
+                    </tr>
+                    <tr><!-- Row 5 -->
+                        <td>Database System</td>
+                        <td>Academic Project</td>
+                        <td>HTML, CSS</td>
+                        <td>2023</td>
+                        <td>Projects Page</td>
+                    </tr>
+                    <tr><!-- Row 6 -->
+                        <td>CompTIA ITF+ Certification</td>
+                        <td>Certification</td>
+                        <td>CompTIA ITF+</td>
+                        <td>2025</td>
+                        <td>Skills Page</td>
+                    </tr>
+                    <tr><!-- Row 7 -->
+                        <td>Responsive Web Design Certification</td>
+                        <td>Online Learning</td>
+                        <td>freeCodeCamp, Github</td>
+                        <td>Ongoing</td>
+                        <td>Skills Page</td>
+                    </tr>
+                </table><!-- End Table -->
+            </div>
+
+            <div id="form">
+                <h2>Complete the form below to get in touch with me^^!</h2>
+
+                <form class="form-grid"><!-- Start form -->
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required />
+
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required />
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required />
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <p>I would like more information about:</p>
+
+                        <label for="acadProjects"><input type="checkbox" name="interest" id="acadProjects" value="Academic Projects" />Academic Projects</label>
+
+                        <label for="uiUx"><input type="checkbox" name="interest" id="UI/UX" value="UI/UX Work" />UI/UX Work</label>
+
+                        <label for="skillsCert"><input type="checkbox" name="interest" id="skillsCert" value="Skills & Certifications" />Skills & Certifications</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Referral Source</legend>
+                        <label for="reference">How did you find my portfolio?</label>
+                        <select name="reference" id="reference">
+                            <option value="prof">Professor</option>
+                            <option value="emp">Employer</option>
+                            <option value="friend">Friend</option>
+                            <option value="social">Social Media</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="questions">Questions?</label>
+                        <textarea id="questions" name="questions" row="5" cols="35"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" class="btn" />
+                </form><!-- End form -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p>Created by <strong>Joy Sarmiento</strong></p>
+            <p><strong>Follow Me:</strong> <a href="https://www.linkedin.com/in/maria-anne-joy-sarmiento-650006378/">LinkedIn</a> | <a href="https://github.com/joysarmiento">GitHub</a> | <a href="mailto:sarmiento.joy0416@gmail.com">Email</a></p>
+        </footer>
+    </div>
+</body>
+</html>

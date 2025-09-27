@@ -1,0 +1,170 @@
+/* --- General CSS styles--- */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("images/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* CSS styles for headings */
+h1 {
+    text-align: center;
+    color: white;
+    margin: 5px auto 4px auto;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.85);
+    width: 250px;
+    border-bottom: 4px solid white;
+    padding-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* CSS styles for navigation */
+nav {
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: 1.15rem;
+}
+
+a:link {
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+a:hover {
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 1);
+}  
+
+.emoji {
+    color: white;
+    font-size: 1.4rem;
+}
+
+/* ---CSS styles for Checkers, Chess, Scrabble--- */
+/* CSS styles for containers */
+#checkers-container, #chess-container, #scrabble-container{
+    display: table;
+    box-sizing: border-box;
+    margin: 50px auto;
+    padding-top: 0.5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgba(245, 222, 179, 0.671);
+    border-radius: 30px;
+    text-align: center;
+}
+
+#checkers-board, #chess-board, #scrabble-board {
+    box-shadow: 15px 15px 20px 0 black;
+    margin: 0 auto;
+    background-color: white;
+    display: inline-block;
+}
+
+.checkers, .chess, .scrabble { 
+    margin: auto;
+}
+
+/* CSS styles for checkers */
+.checkers { 
+	border: solid 5px #582202;
+}
+
+.checkers td {
+    border: solid 2px #582202;
+	width: 5vw;
+    height: 5vw;
+}
+
+.wht {
+    background-color: #e1bf81;
+}
+
+.blk {
+    background-color: #582202;
+}
+
+.chess { 
+	border: solid 5px green;
+}
+
+/* CSS styles for chess */
+.chess td {
+    border: solid 2px green;
+	width: 5vw;
+    height: 5vw;
+    text-align: center;
+    font-size: 3.5vw;
+}
+
+.beige {
+    background-color: wheat;
+}
+
+.green {
+    background-color: green;
+}
+
+/* CSS styles for scrabble */
+.scrabble { 
+	border: solid 5px #013249;
+}
+
+.scrabble td {
+    border: solid 2px #013249;
+	width: 5vw;
+    height: 5vw;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navy {
+    background-color: #073046;
+    font-size: 0.8vw;
+}
+
+.lightblue {
+    background-color: #cddddd;
+    font-size: 0.8vw;
+}
+
+.blue {
+    background-color: #0b7da0;
+    font-size: 0.8vw;
+}
+
+.skyblue {
+    background-color: #9cc3d7;
+    font-size: 0.8vw;
+}
+
+.aquablue {
+    background-color: #84c9cf;
+    font-size: 0.8vw;
+}
+
+.darknavycenter {
+    background-color: #013249;
+    color:#cddddd;
+    text-align: center;
+    font-size: 2.3vw;
+}

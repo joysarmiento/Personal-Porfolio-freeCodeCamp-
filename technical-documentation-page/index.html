@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basics Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>HTML Basics Documentation</header>
+    <a href="#Introduction_to_HTML" class="nav-link">Introduction to HTML</a>
+    <a href="#HTML_Elements" class="nav-link">HTML Elements</a>
+    <a href="#HTML_Attributes" class="nav-link">HTML Attributes</a>
+    <a href="#HTML_Forms" class="nav-link">HTML Forms</a>
+    <a href="#Semantic_HTML" class="nav-link">Semantic HTML</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction_to_HTML">
+      <header>Introduction to HTML</header>
+      <p>HTML (HyperText Markup Language) is the foundation of every webpage on the internet. It defines the structure of content and provides meaning to text, images, and multimedia elements.</p>
+      <p>Unlike programming languages, HTML is a <strong>markup language</strong>. It doesn’t perform logic or calculations, but instead tells browsers <em>what each piece of content represents</em>.</p>
+      <p>An HTML document is made of nested elements that describe headings, paragraphs, links, images, and other content. These elements are enclosed in tags, such as <code>&lt;p&gt;</code> for paragraphs.</p>
+      <code>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html lang="en"&gt;<br>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+        &nbsp;&nbsp;&lt;title&gt;My First Page&lt;/title&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;Hello, World!&lt;/p&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+      </code>
+      <ul>
+        <li>HTML provides the <strong>structure</strong> of web pages</li>
+        <li>It works alongside <strong>CSS</strong> (for styling) and <strong>JavaScript</strong> (for interactivity)</li>
+        <li>Browsers interpret HTML to render websites</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="HTML_Elements">
+      <header>HTML Elements</header>
+      <p>An HTML element is the basic building block of a webpage. It consists of an opening tag, optional content, and a closing tag. Some elements, such as images, are self-closing.</p>
+      <p>Here’s the general structure of an element:</p>
+      <code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;</code>
+      <p>Some examples:</p>
+      <code>
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+        &lt;h1&gt;This is a main heading&lt;/h1&gt;<br>
+        &lt;a href="https://example.com"&gt;A hyperlink&lt;/a&gt;
+      </code>
+      <ul>
+        <li><strong>Paragraphs</strong>: &lt;p&gt; represent blocks of text</li>
+        <li><strong>Headings</strong>: &lt;h1&gt; to &lt;h6&gt; represent titles, with &lt;h1&gt; as the most important</li>
+        <li><strong>Links</strong>: &lt;a&gt; create clickable hyperlinks</li>
+        <li><strong>Images</strong>: &lt;img&gt; embed pictures</li>
+        <li><strong>Lists</strong>: &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; create lists</li>
+      </ul>
+      <p>Some elements are <em>block-level</em> (taking full width, like &lt;div&gt; and &lt;p&gt;) while others are <em>inline</em> (taking only as much width as needed, like &lt;span&gt; and &lt;a&gt;).</p>
+    </section>
+
+    <section class="main-section" id="HTML_Attributes">
+      <header>HTML Attributes</header>
+      <p>Attributes provide extra information about elements. They always appear in the opening tag and are written as name-value pairs.</p>
+      <p>For example, the <code>href</code> attribute specifies the destination of a link:</p>
+      <code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code>
+      <p>Here are some common attributes:</p>
+      <ul>
+        <li><strong>href</strong>: Specifies the link destination in &lt;a&gt; tags</li>
+        <li><strong>src</strong>: Defines the source of an image or video</li>
+        <li><strong>alt</strong>: Provides alternative text for images, useful for accessibility</li>
+        <li><strong>id</strong>: Assigns a unique identifier to an element</li>
+        <li><strong>class</strong>: Groups elements for styling with CSS</li>
+      </ul>
+      <p>Example with multiple attributes:</p>
+      <code>&lt;img src="cat.jpg" alt="A cute cat" width="300" height="200"&gt;</code>
+    </section>
+
+    <section class="main-section" id="HTML_Forms">
+      <header>HTML Forms</header>
+      <p>Forms allow users to submit data to a server. They are essential for user interactions such as logging in, signing up, or submitting feedback.</p>
+      <p>A simple form example:</p>
+      <code>
+        &lt;form action="/submit" method="post"&gt;<br>
+        &nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br><br>
+        &nbsp;&nbsp;&lt;label for="email"&gt;Email:&lt;/label&gt;<br>
+        &nbsp;&nbsp;&lt;input type="email" id="email" name="email"&gt;<br><br>
+        &nbsp;&nbsp;&lt;input type="submit" value="Submit"&gt;<br>
+        &lt;/form&gt;
+      </code>
+      <p>Common form elements include:</p>
+      <ul>
+        <li><strong>&lt;input&gt;</strong>: text fields, checkboxes, radio buttons</li>
+        <li><strong>&lt;label&gt;</strong>: associates text with input fields</li>
+        <li><strong>&lt;textarea&gt;</strong>: allows multi-line input</li>
+        <li><strong>&lt;select&gt;</strong>: creates dropdown menus</li>
+        <li><strong>&lt;button&gt;</strong>: clickable buttons</li>
+      </ul>
+      <p>Forms also support validation through attributes like <code>required</code>, <code>maxlength</code>, and <code>pattern</code>.</p>
+    </section>
+
+    <section class="main-section" id="Semantic_HTML">
+      <header>Semantic HTML</header>
+      <p>Semantic HTML uses tags that clearly describe their meaning. This makes web pages easier to understand for both developers and machines (like search engines and assistive technologies).</p>
+      <p>For example, instead of using &lt;div&gt; everywhere, semantic HTML provides elements like &lt;header&gt;, &lt;article&gt;, and &lt;footer&gt; to give context.</p>
+      <code>
+        &lt;header&gt;<br>
+        &nbsp;&nbsp;&lt;h1&gt;My Blog&lt;/h1&gt;<br>
+        &lt;/header&gt;<br>
+        &lt;main&gt;<br>
+        &nbsp;&nbsp;&lt;article&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;First Post&lt;/h2&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This is my first blog post.&lt;/p&gt;<br>
+        &nbsp;&nbsp;&lt;/article&gt;<br>
+        &lt;/main&gt;<br>
+        &lt;footer&gt;<br>
+        &nbsp;&nbsp;&lt;p&gt;© 2025 My Blog&lt;/p&gt;<br>
+        &lt;/footer&gt;
+      </code>
+      <ul>
+        <li><strong>&lt;header&gt;</strong>: Represents introductory content, often a logo or navigation</li>
+        <li><strong>&lt;nav&gt;</strong>: Defines a block of navigation links</li>
+        <li><strong>&lt;main&gt;</strong>: Contains the dominant content of the page</li>
+        <li><strong>&lt;article&gt;</strong>: Represents self-contained content like a blog post</li>
+        <li><strong>&lt;footer&gt;</strong>: Holds information about the author, copyright, or related links</li>
+      </ul>
+      <p>Semantic HTML improves accessibility for screen readers, boosts SEO rankings, and makes code easier to maintain.</p>
+    </section>
+  </main>
+</body>
+</html>

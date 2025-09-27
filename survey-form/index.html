@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-sacle=1.0">
+  <title>Discover Your Inner Spark!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Discover Your Inner Spark!</h1>
+    <p id="description">Take this fun quiz to uncover what truly energizes and inspires you.</p>
+  </header>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+    </label>
+
+    <label id="email-label" for="email">Email
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+    </label>
+
+    <label id="number-label" for="number">Age
+      <input type="number" id="number" name="number" min="16" max="120" placeholder="Enter your age" required />
+    </label>
+
+    <label for="dropdown">Pick your favorite hobby
+      <select id="dropdown" name="hobby" required>
+        <option value="">(choose one)</option>
+        <option value="reading">Reading Books</option>
+        <option value="games">Playing Games</option>
+        <option value="traveling">Traveling</option>
+        <option value="sports">Playing Sports</option>
+      </select>
+    </label>
+
+    <label for="color">Your spark color
+      <select id="color" name="color" required>
+        <option value="">(pick a color)</option>
+        <option value="blue">Blue - Calm & Focused</option>
+        <option value="red">Red - Bold & Passionate</option>
+        <option value="yellow">Yellow - Bright & Energetic</option>
+        <option value="green">Green - Balanced & Thoughtful</option>
+        <option value="purple">Purple - Creative & Deep</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>What's your ideal weekend?</legend>
+      <label><input type="radio" name="weekend" value="relax" required> Staying home and relaxing</label>
+      <label><input type="radio" name="weekend" value="adventure"> Going on an adventure</label>
+      <label><input type="radio" name="weekend" value="friends"> Hanging out with friends</label>
+      <label><input type="radio" name="weekend" value="learning"> Learning something new</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Which of these do you enjoy? (Check all that apply)</legend>
+      <label><input type="checkbox" name="enjoy" value="music"> Listening to music</label>
+      <label><input type="checkbox" name="enjoy" value="movies"> Watching movies</label>
+      <label><input type="checkbox" name="enjoy" value="food"> Trying new food</label>
+      <label><input type="checkbox" name="enjoy" value="art"> Making art</label>
+    </fieldset>
+
+    <label for="free-day">Dream free day
+      <textarea id="free-day" name="free-day" rows="3" placeholder="Describe your perfect free day..."></textarea>
+    </label>
+
+    <label for="comments">Any other comments or suggestions?
+      <textarea id="comments" name="comments" rows="4" placeholder="We'd love to hear your thoughts..."></textarea>
+    </label>
+
+    <button id="submit" type="submit">Reveal My Spark</button>
+  </form>
+</body>
+</html>
